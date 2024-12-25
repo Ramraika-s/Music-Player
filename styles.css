@@ -1,76 +1,43 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    background-color: #f0f0f0;
 }
 
-.music-player {
+.audio-player {
     background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
     text-align: center;
 }
 
-.track-info {
-    margin-bottom: 20px;
-}
-
-.controls {
-    margin: 20px 0;
-}
-
-.control-button {
-    padding: 10px 15px;
-    margin: 0 5px;
+button {
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
-.control-button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-.track-duration {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-.progress-container, .volume-container {
-    margin: 10px 0;
-}
-
-input[type="range"] {
+.progress-container {
     width: 100%;
-}
-
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
+    background-color: #ddd;
+    height: 5px;
+    border-radius: 5px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
+}
+
+#progress {
+    height: 100%;
+    background-color: #007bff;
+    width: 0;
 }
